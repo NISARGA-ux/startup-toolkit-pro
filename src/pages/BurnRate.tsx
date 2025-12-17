@@ -137,5 +137,17 @@ const BurnRate = () => {
     </div>
   );
 };
-
+export function BurnRate() {
+return (
+<div className="max-w-md">
+<h2 className="text-2xl font-bold mb-4">Burn Rate Calculator</h2>
+<input type="number" className="w-full p-3 rounded bg-slate-800 mb-3" placeholder="Monthly expenses" />
+<input type="number" className="w-full p-3 rounded bg-slate-800 mb-3" placeholder="Cash available" />
+<div className="bg-slate-900 p-4 rounded">
+<p className="text-slate-400">Runway</p>
+<p className="text-xl font-bold">— months</p>
+</div>
+</div>
+);
+}
 export default BurnRate;
