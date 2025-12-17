@@ -108,5 +108,18 @@ const PitchGenerator = () => {
     </div>
   );
 };
-
+export function Pitch() {
+return (
+<div className="max-w-xl">
+<h2 className="text-2xl font-bold mb-4">One‑Line Pitch</h2>
+<input className="w-full p-3 rounded bg-slate-800 mb-3" placeholder="Target user" />
+<input className="w-full p-3 rounded bg-slate-800 mb-3" placeholder="Problem" />
+<input className="w-full p-3 rounded bg-slate-800 mb-3" placeholder="Solution" />
+<div className="bg-slate-900 p-4 rounded mt-4">
+<p className="text-slate-400">Live Preview</p>
+<p className="font-semibold">We help ___ solve ___ using ___</p>
+</div>
+</div>
+);
+}
 export default PitchGenerator;
