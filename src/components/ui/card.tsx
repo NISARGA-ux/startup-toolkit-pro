@@ -39,5 +39,12 @@ const CardFooter = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDiv
   ),
 );
 CardFooter.displayName = "CardFooter";
-
+export default function Card({ title, value }) {
+return (
+<div className="rounded-2xl bg-slate-900 p-6 shadow hover:scale-[1.02] transition">
+<p className="text-slate-400 text-sm">{title}</p>
+<h2 className="text-2xl font-bold mt-2">{value}</h2>
+</div>
+);
+}
 export { Card, CardHeader, CardFooter, CardTitle, CardDescription, CardContent };
