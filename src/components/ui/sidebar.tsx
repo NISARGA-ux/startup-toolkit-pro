@@ -608,7 +608,20 @@ const SidebarMenuSubButton = React.forwardRef<
   );
 });
 SidebarMenuSubButton.displayName = "SidebarMenuSubButton";
-
+export default function Sidebar() {
+return (
+<aside className="fixed left-0 top-0 h-screen w-64 bg-slate-900 border-r border-slate-800 p-6">
+<h1 className="text-xl font-bold mb-8">🚀 Startup Hub</h1>
+<nav className="space-y-4 text-slate-300">
+<a className="block hover:text-white" href="#">Dashboard</a>
+<a className="block hover:text-white" href="#">Pitch</a>
+<a className="block hover:text-white" href="#">Branding</a>
+<a className="block hover:text-white" href="#">Equity</a>
+<a className="block hover:text-white" href="#">Finance</a>
+</nav>
+</aside>
+);
+}
 export {
   Sidebar,
   SidebarContent,
