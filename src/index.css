@@ -6,6 +6,11 @@
 All colors MUST be HSL.
 */
 
+
+
+body {
+font-family: Inter, system-ui, sans-serif;
+}
 @layer base {
   :root {
     --background: 210 20% 98%;
